@@ -11,9 +11,9 @@ class GuessingGame {
     }
 
     guess() {
-        this.centr = ((this.max - this.min) % 2) !== 0 ? 
-            ((this.max - this.min) / 2) + 0.5 + this.min : 
-                ((this.max - this.min) / 2 + this.min);
+        this.centr = ((this.max + this.min) % 2) !== 0 ? 
+            ((this.max + this.min) / 2) + 0.5 : 
+                ((this.max + this.min) / 2);
         return this.centr
     }
 
